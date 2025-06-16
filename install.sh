@@ -31,10 +31,7 @@ iptables -P FORWARD ACCEPT
 
 echo "Downloading kernel"
 wget -q https://s3.amazonaws.com/spec.ccfc.min/firecracker-ci/4360-tmp-artifacts/x86_64/vmlinux-5.10.209
-mv vmlinux-5.10.209 vmlinux-5.10.209
-
 wget -q https://s3.amazonaws.com/spec.ccfc.min/firecracker-ci/4360-tmp-artifacts/x86_64/vmlinux-6.1.76
-mv vmlinux-6.1.76 vmlinux-6.1.76
 
 echo "Firecracker version: ${VERSION}"
 echo "Kernel available: vmlinux-5.10.209, vmlinux-6.1.76"
